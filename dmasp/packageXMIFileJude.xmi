@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns0:Package xmlns:ns0="UML"/>
+<ns1:ModelElement.namespace xmlns:ns1="UML"/>
+<ns2:Namespace xmlns:ns2="UML"/>
+<ns3:ModelElement.visibility xmlns:ns3="UML"/>
+<ns4:Namespace.ownedElement xmlns:ns4="UML"/>
+<ns5:Class xmlns:ns5="UML"/>
+            <UML:Package xmi.id="Java_Packages" name="Packages" version="0" unSolvedFlag="false" isRoot="true" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="1071c84-fed3deb4f2-e12556edfc4798525298ccf2388f7db7"/>
+</UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:Namespace.ownedElement/>
+</UML:Package>

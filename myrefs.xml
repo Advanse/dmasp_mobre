@@ -1,0 +1,8 @@
+<userrefactorings>
+	<myrefactorings>
+		<refactoring>
+			<name>ConcernX Refactoring</name>
+			<handler>dmasp.actions.IdentifyResourceRefactoring</handler>
+		</refactoring>
+	</myrefactorings>
+</userrefactorings>

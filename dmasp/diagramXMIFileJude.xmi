@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns0:Class xmlns:ns0="UML"/>
+<ns1:ModelElement.namespace xmlns:ns1="UML"/>
+<ns2:Namespace xmlns:ns2="UML"/>
+<ns3:Classifier.feature xmlns:ns3="UML"/>
+<ns4:Attribute xmlns:ns4="UML"/>
+<ns5:ModelElement.visibility xmlns:ns5="UML"/>
+<ns6:ModelElement.taggedValue xmlns:ns6="UML"/>
+<ns7:TaggedValue xmlns:ns7="UML"/>
+<ns8:TaggedValue.modelElement xmlns:ns8="UML"/>
+<ns9:ModelElement xmlns:ns9="UML"/>
+<ns10:Feature.owner xmlns:ns10="UML"/>
+<ns11:Classifier xmlns:ns11="UML"/>
+<ns12:Feature.visibility xmlns:ns12="UML"/>
+<ns13:StructuralFeature.type xmlns:ns13="UML"/>
+<ns14:extension xmlns:ns14="XMI"/>
+<ns15:Diagram xmlns:ns15="JUDE"/>
+<ns16:Diagram.presentations xmlns:ns16="JUDE"/>
+<ns17:FramePresentation xmlns:ns17="JUDE"/>
+<ns18:UPresentation.diagram xmlns:ns18="JUDE"/>
+<ns19:JomtPresentation.location xmlns:ns19="JUDE"/>
+<ns20:field xmlns:ns20="XMI"/>
+<ns21:ClassifierPresentation xmlns:ns21="JUDE"/>
+<ns22:UPresentation.semanticModel xmlns:ns22="JUDE"/>
+<ns23:UPresentation.customStyleMap xmlns:ns23="JUDE"/>
+<ns24:UPresentation.styleProperty xmlns:ns24="JUDE"/>
+<ns25:Diagram.customStyleMap xmlns:ns25="JUDE"/>
+<ns26:Diagram.styleProperty xmlns:ns26="JUDE"/>
+<ns27:Primitive xmlns:ns27="UML"/>
+<ns28:UPresentation.location xmlns:ns28="JUDE"/>
+<ns29:Operation xmlns:ns29="UML"/>
+<ns30:BehavioralFeature.parameter xmlns:ns30="UML"/>
+<ns31:Parameter xmlns:ns31="UML"/>
+<ns32:Parameter.behavioralFeature xmlns:ns32="UML"/>
+<ns33:Parameter.type xmlns:ns33="UML"/>
+<ns34:BehavioralFeature xmlns:ns34="UML"/>
+<ns35:Stereotype xmlns:ns35="UML"/>
+<ns36:Stereotype.baseClass xmlns:ns36="UML"/>
+<ns37:Stereotype.extendedElement xmlns:ns37="UML"/>
+<ns38:ModelElement.stereotype xmlns:ns38="UML"/>
+<ns39:Association xmlns:ns39="UML"/>
+<ns40:Association.connection xmlns:ns40="UML"/>
+<ns41:AssociationEnd xmlns:ns41="UML"/>
+<ns42:StructuralFeature.multiplicity xmlns:ns42="UML"/>
+<ns43:Multiplicity xmlns:ns43="UML"/>
+<ns44:Multiplicity.range xmlns:ns44="UML"/>
+<ns45:MultiplicityRange xmlns:ns45="UML"/>
+<ns46:AssociationEnd.participant xmlns:ns46="UML"/>
+<ns47:AssociationEnd.association xmlns:ns47="UML"/>
+<ns48:AssociationEnd.visibility xmlns:ns48="UML"/>
+<ns49:AssociationEnd.association xmlns:ns49="UML"/>
+<ns50:AssociationEnd xmlns:ns50="UML"/>
+<ns51:AssociationPresentation xmlns:ns51="JUDE"/>
+<ns52:UPresentation.servers xmlns:ns52="JUDE"/>
+<ns53:PathPresentation.namePresentation xmlns:ns53="JUDE"/>
+<ns54:LabelPresentation xmlns:ns54="JUDE"/>
+<ns55:JomtPresentation.compositeParent xmlns:ns55="JUDE"/>
+<ns56:UPresentation xmlns:ns56="JUDE"/>
+<ns57:BinaryRelationPresentation.sourceEnd xmlns:ns57="JUDE"/>
+<ns58:BinaryRelationPresentation.targetEnd xmlns:ns58="JUDE"/>
+<ns59:PathPresentation.points xmlns:ns59="JUDE"/>
+<ns60:AssociationPresentation.qualifierBoxAPresentation xmlns:ns60="JUDE"/>
+<ns61:AssociationPresentation.qualifierBoxBPresentation xmlns:ns61="JUDE"/>
+<ns62:QualifierBoxPresentation xmlns:ns62="JUDE"/>
+<ns63:UPresentation.clients xmlns:ns63="JUDE"/>
+<ns64:ModelElement.clientDependency xmlns:ns64="UML"/>
+<ns65:Dependency xmlns:ns65="UML"/>
+<ns66:Dependency.client xmlns:ns66="UML"/>
+<ns67:Dependency.supplier xmlns:ns67="UML"/>
+<ns68:DependencyPresentation xmlns:ns68="JUDE"/>
+        <UML:Class xmi.id="model.Display" name="Display" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="0-fxdi7ror--vt5o6g--zcej9x-4fa0256f5c54d6d1903568de23302b4c"/>
+</UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:Classifier.feature>
+            <UML:Attribute xmi.id="model.Display.Printer.p" name="p" version="0" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="changeable">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="model.Display"/>
+</UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="private"/>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="stereotype_Singleton_model.Display.Printer.p"/>
+</UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="model.Display"/>
+</UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="private"/>
+              <UML:StructuralFeature.type>
+                <UML:Classifier xmi.idref="model.Printer"/>
+</UML:StructuralFeature.type>
+</UML:Attribute>
+            <UML:Operation xmi.id="model.Display.teste" name="teste" version="0" unSolvedFlag="false" ownerScope="instance" isQuery="true" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="model.Display"/>
+</UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:ModelElement.stereotype>
+            <UML:Stereotype xmi.idref="stereotype_Singleton_model.Display.teste"/>
+</UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="model.Display"/>
+</UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="return_model.Display.teste" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="model.Display"/>
+</UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="model.Display.teste"/>
+</UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="void"/>
+</UML:Parameter.type>
+</UML:Parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="stereotype_Singleton_model.Display"/>
+</UML:ModelElement.stereotype>
+<UML:ModelElement.clientDependency/>
+</UML:Class>
+        <UML:Class xmi.id="model.Printer" name="Printer" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="0-fxdi7ror--vt5o6g--zcej9x-4fa0256f5c54d6d1903568de23302b4c"/>
+</UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:Classifier.feature>
+            <UML:Attribute xmi.id="model.Printer.Printer.single" name="single" version="0" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="changeable">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="model.Printer"/>
+</UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="private"/>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="stereotype_Singleton_model.Printer.Printer.single"/>
+</UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="model.Printer"/>
+</UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="private"/>
+              <UML:StructuralFeature.type>
+                <UML:Classifier xmi.idref="model.Printer"/>
+</UML:StructuralFeature.type>
+</UML:Attribute>
+            <UML:Operation xmi.id="model.Printer.instance" name="instance" version="0" unSolvedFlag="false" ownerScope="instance" isQuery="true" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="model.Printer"/>
+</UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:ModelElement.stereotype>
+            <UML:Stereotype xmi.idref="stereotype_Singleton_model.Printer.instance"/>
+</UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="model.Printer"/>
+</UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="return_model.Printer.instance" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="model.Printer"/>
+</UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="model.Printer.instance"/>
+</UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="model.Printer"/>
+</UML:Parameter.type>
+</UML:Parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="stereotype_Singleton_model.Printer"/>
+</UML:ModelElement.stereotype>
+<UML:ModelElement.clientDependency/>
+</UML:Class>
+        <UML:Association xmi.id="model.Printer.model.Display" name="" version="0" unSolvedFlag="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.id="0-fxdi7ror--vt5o6g--zcej9x-4fa0256f5c54d6d1903568de23302b4c"/>
+</UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="model.Printer.model.Display_First" name="" version="0" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="changeable" aggregation="none" ordering="unordered" navigableType="unspecified navigable" isNavigable="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="0-fxdi7ror--vt5o6g--zcej9x-4fa0256f5c54d6d1903568de23302b4c"/>
+</UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="private"/>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="model.Display"/>
+</UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="private"/>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id="Multiplicity_model.Printer.model.Display_model.Display">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="MultiplicityRange_model.Printer.model.Display_model.Display" lowerValue="" upperValue=""/>
+</UML:Multiplicity.range>
+</UML:Multiplicity>
+</UML:StructuralFeature.multiplicity>
+              <UML:AssociationEnd.participant>
+                <UML:Classifier xmi.idref="model.Printer"/>
+</UML:AssociationEnd.participant>
+              <UML:AssociationEnd.association>
+                <UML:Association xmi.idref="model.Printer.model.Display"/>
+</UML:AssociationEnd.association>
+              <UML:AssociationEnd.visibility xmi.value="private"/>
+</UML:AssociationEnd>
+            <UML:AssociationEnd xmi.id="model.Printer.model.Display_Second" name="" version="0" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="changeable" aggregation="none" ordering="unordered" navigableType="unspecified navigable" isNavigable="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="0-fxdi7ror--vt5o6g--zcej9x-4fa0256f5c54d6d1903568de23302b4c"/>
+</UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="private"/>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="model.Printer"/>
+</UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="private"/>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id="Multiplicity_model.Printer.model.Display_model.Printer">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="MultiplicityRange_model.Printer.model.Display_model.Printer" lowerValue="" upperValue=""/>
+</UML:Multiplicity.range>
+</UML:Multiplicity>
+</UML:StructuralFeature.multiplicity>
+              <UML:AssociationEnd.participant>
+                <UML:Classifier xmi.idref="model.Display"/>
+</UML:AssociationEnd.participant>
+              <UML:AssociationEnd.association>
+                <UML:Association xmi.idref="model.Printer.model.Display"/>
+</UML:AssociationEnd.association>
+              <UML:AssociationEnd.visibility xmi.value="private"/>
+</UML:AssociationEnd>
+</UML:Association.connection>
+</UML:Association>
+        <UML:AssociationEnd xmi.idref="model.Printer.model.Display_First"/>
+        <UML:AssociationEnd xmi.idref="model.Printer.model.Display_Second"/>
+        <UML:Association xmi.id="model.Printer.model.Printer" name="" version="0" unSolvedFlag="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.id="0-fxdi7ror--vt5o6g--zcej9x-4fa0256f5c54d6d1903568de23302b4c"/>
+</UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="model.Printer.model.Printer_First" name="" version="0" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="changeable" aggregation="none" ordering="unordered" navigableType="unspecified navigable" isNavigable="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="0-fxdi7ror--vt5o6g--zcej9x-4fa0256f5c54d6d1903568de23302b4c"/>
+</UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="private"/>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="model.Printer"/>
+</UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="private"/>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id="Multiplicity_model.Printer.model.Printer_model.Printer">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="MultiplicityRange_model.Printer.model.Printer_model.Printer" lowerValue="" upperValue=""/>
+</UML:Multiplicity.range>
+</UML:Multiplicity>
+</UML:StructuralFeature.multiplicity>
+              <UML:AssociationEnd.participant>
+                <UML:Classifier xmi.idref="model.Printer"/>
+</UML:AssociationEnd.participant>
+              <UML:AssociationEnd.association>
+                <UML:Association xmi.idref="model.Printer.model.Printer"/>
+</UML:AssociationEnd.association>
+              <UML:AssociationEnd.visibility xmi.value="private"/>
+</UML:AssociationEnd>
+            <UML:AssociationEnd xmi.id="model.Printer.model.Printer_Second" name="" version="0" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="changeable" aggregation="none" ordering="unordered" navigableType="unspecified navigable" isNavigable="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="0-fxdi7ror--vt5o6g--zcej9x-4fa0256f5c54d6d1903568de23302b4c"/>
+</UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="private"/>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="model.Printer"/>
+</UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="private"/>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id="Multiplicity_model.Printer.model.Printer_model.Printer">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="MultiplicityRange_model.Printer.model.Printer_model.Printer" lowerValue="" upperValue=""/>
+</UML:Multiplicity.range>
+</UML:Multiplicity>
+</UML:StructuralFeature.multiplicity>
+              <UML:AssociationEnd.participant>
+                <UML:Classifier xmi.idref="model.Printer"/>
+</UML:AssociationEnd.participant>
+              <UML:AssociationEnd.association>
+                <UML:Association xmi.idref="model.Printer.model.Printer"/>
+</UML:AssociationEnd.association>
+              <UML:AssociationEnd.visibility xmi.value="private"/>
+</UML:AssociationEnd>
+</UML:Association.connection>
+</UML:Association>
+        <UML:AssociationEnd xmi.idref="model.Printer.model.Printer_First"/>
+        <UML:AssociationEnd xmi.idref="model.Printer.model.Printer_Second"/>
+        <UML:Stereotype xmi.id="stereotype_Singleton_model.Display" name="Sec_Singleton" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Class</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="model.Display"/>
+</UML:Stereotype.extendedElement>
+</UML:Stereotype>
+        <UML:Stereotype xmi.id="stereotype_Singleton_model.Printer" name="Pri_Singleton" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Class</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="model.Printer"/>
+</UML:Stereotype.extendedElement>
+</UML:Stereotype>
+        <UML:Stereotype xmi.id="stereotype_Singleton_model.Display.Printer.p" name="Pri_Singleton" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Attribute</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="model.Display.Printer.p"/>
+</UML:Stereotype.extendedElement>
+</UML:Stereotype>
+        <UML:Stereotype xmi.id="stereotype_Singleton_model.Printer.Printer.single" name="Pri_Singleton" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Attribute</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="model.Printer.Printer.single"/>
+</UML:Stereotype.extendedElement>
+</UML:Stereotype>
+        <UML:Stereotype xmi.id="stereotype_Singleton_model.Display.teste" name="Sec_Singleton" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="model.Display.teste"/>
+</UML:Stereotype.extendedElement>
+</UML:Stereotype>
+        <UML:Stereotype xmi.id="stereotype_Singleton_model.Printer.instance" name="Pri_Singleton" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="model.Printer.instance"/>
+</UML:Stereotype.extendedElement>
+</UML:Stereotype>
+    <UML:Primitive xmi.id="int" name="int" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+    <UML:Primitive xmi.id="float" name="float" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+    <UML:Primitive xmi.id="double" name="double" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+    <UML:Primitive xmi.id="char" name="char" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+    <UML:Primitive xmi.id="boolean" name="boolean" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+    <UML:Primitive xmi.id="byte" name="byte" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+    <UML:Primitive xmi.id="long" name="long" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+    <UML:Primitive xmi.id="short" name="short" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+    <UML:Primitive xmi.id="void" name="void" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+    <UML:Primitive xmi.id="Boolean" name="Boolean" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+    <UML:Primitive xmi.id="Byte" name="Byte" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+    <UML:Primitive xmi.id="Character" name="Character" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+    <UML:Primitive xmi.id="Double" name="Double" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+    <UML:Primitive xmi.id="Float" name="Float" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+    <UML:Primitive xmi.id="Integer" name="Integer" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+    <UML:Primitive xmi.id="Long" name="Long" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+    <UML:Primitive xmi.id="Short" name="Short" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+    <UML:Primitive xmi.id="Object" name="Object" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+    <UML:Primitive xmi.id="Throwable" name="Throwable" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+    <UML:Primitive xmi.id="Thread" name="Thread" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+    <UML:Primitive xmi.id="Exception" name="Exception" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+    <UML:Primitive xmi.id="Class" name="Class" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+    <UML:Primitive xmi.id="Date" name="Date" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+    <XMI.extension/>
+    <XMI.extension>
+      <JUDE:Diagram xmi.id="Class_Diagram" name="Class_Diagram" typeInfo="Class Diagram" version="0">
+        <UML:ModelElement.namespace>
+          <UML:Namespace xmi.idref="0-fxdi7ror--vt5o6g--zcej9x-4fa0256f5c54d6d1903568de23302b4c"/>
+</UML:ModelElement.namespace>
+        <JUDE:Diagram.presentations>
+          <JUDE:FramePresentation xmi.id="4yu-fxdi7ror--vt5o6g--zcej9x-4fa0256f5c54d6d1903568de23302b4c" version="0" depth="2147483636" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="640.0" height="480.0" doAutoResize="false" visibility="true" label="+">
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="Class_Diagram"/>
+</JUDE:UPresentation.diagram>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>10.0</XMI.field>
+              <XMI.field>10.0</XMI.field>
+</JUDE:JomtPresentation.location>
+</JUDE:FramePresentation>
+          <JUDE:ClassifierPresentation xmi.id="classifierPresentation_model.Display" version="0" depth="2147483634" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="66.0" height="42.09375" doAutoResize="true" visibility="true" label="Display" isActive="false" allAttributeVisibility="true" allOperationVisibility="true" visibilityKindVisibility="true" attributeTypeVisibility="true" parameterVisibility="true" parameterTypeVisibility="true" returnTypeVisibility="true" isClassNameItalic="false" attributeInitValueVisibility="true" pathVisibility="0" attributeStereotypeVisibility="true" operationStereotypeVisibility="true" attributeConstraintVisibility="true" operationConstraintVisibility="true" publicAttributeVisibility="true" protectedAttributeVisibility="true" packageAttributeVisibility="true" privateAttributeVisibility="true" publicOperationVisibility="true" protectedOperationVisibility="true" packageOperationVisibility="true" privateOperationVisibility="true" classType="0" interfaceType="0" nameVisibility="true" templateParameterVisibility="true" templateParameterMultiline="false" boundClassTemplateParameterNameVisibility="false" boundClassTemplateParameterVisibility="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Class xmi.idref="model.Display"/>
+</JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="Class_Diagram"/>
+</JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:AssociationPresentation xmi.idref="associationPresentation_model.Printer.model.Display"/>
+</JUDE:UPresentation.clients>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="attribute.filter_by_visibility" value=""/>
+              <JUDE:UPresentation.styleProperty key="operation.filter_by_visibility" value=""/>
+</JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>377.0</XMI.field>
+              <XMI.field>93.0</XMI.field>
+</JUDE:JomtPresentation.location>
+</JUDE:ClassifierPresentation>
+          <JUDE:ClassifierPresentation xmi.id="classifierPresentation_model.Printer" version="0" depth="2147483634" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="66.0" height="42.09375" doAutoResize="true" visibility="true" label="Printer" isActive="false" allAttributeVisibility="true" allOperationVisibility="true" visibilityKindVisibility="true" attributeTypeVisibility="true" parameterVisibility="true" parameterTypeVisibility="true" returnTypeVisibility="true" isClassNameItalic="false" attributeInitValueVisibility="true" pathVisibility="0" attributeStereotypeVisibility="true" operationStereotypeVisibility="true" attributeConstraintVisibility="true" operationConstraintVisibility="true" publicAttributeVisibility="true" protectedAttributeVisibility="true" packageAttributeVisibility="true" privateAttributeVisibility="true" publicOperationVisibility="true" protectedOperationVisibility="true" packageOperationVisibility="true" privateOperationVisibility="true" classType="0" interfaceType="0" nameVisibility="true" templateParameterVisibility="true" templateParameterMultiline="false" boundClassTemplateParameterNameVisibility="false" boundClassTemplateParameterVisibility="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Class xmi.idref="model.Printer"/>
+</JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="Class_Diagram"/>
+</JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:AssociationPresentation xmi.idref="associationPresentation_model.Printer.model.Display"/>
+              <JUDE:AssociationPresentation xmi.idref="associationPresentation_model.Printer.model.Printer"/>
+              <JUDE:AssociationPresentation xmi.idref="associationPresentation_model.Printer.model.Printer"/>
+</JUDE:UPresentation.clients>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="attribute.filter_by_visibility" value=""/>
+              <JUDE:UPresentation.styleProperty key="operation.filter_by_visibility" value=""/>
+</JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>377.0</XMI.field>
+              <XMI.field>93.0</XMI.field>
+</JUDE:JomtPresentation.location>
+</JUDE:ClassifierPresentation>
+          <JUDE:AssociationPresentation xmi.id="associationPresentation_model.Printer.model.Display" version="0" depth="2147483633" stereotypeVisibility="true" constraintVisibility="true" notationType="0" rightAngle="false" visibility="true" qualifierBoxATypeVisibility="true" qualifierBoxBTypeVisibility="true" nameDirectionVisible="true" nameDirectionReverse="0">
+            <JUDE:UPresentation.semanticModel>
+              <JUDE:Association xmi.idref="model.Printer.model.Display"/>
+</JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="Class_Diagram"/>
+</JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ClassifierPresentation xmi.idref="classifierPresentation_model.Printer"/>
+              <JUDE:ClassifierPresentation xmi.idref="classifierPresentation_model.Display"/>
+</JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line"/>
+</JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>0.0</XMI.field>
+              <XMI.field>0.0</XMI.field>
+</JUDE:JomtPresentation.location>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="LabelPresentation_model.Printer.model.Display" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="11.0" height="15.09375" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>284.5</XMI.field>
+                  <XMI.field>134.5</XMI.field>
+</JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="associationPresentation_model.Printer.model.Display"/>
+</JUDE:JomtPresentation.compositeParent>
+</JUDE:LabelPresentation>
+</JUDE:PathPresentation.namePresentation>
+            <JUDE:BinaryRelationPresentation.sourceEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+</JUDE:BinaryRelationPresentation.sourceEnd>
+            <JUDE:BinaryRelationPresentation.targetEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+</JUDE:BinaryRelationPresentation.targetEnd>
+            <JUDE:PathPresentation.points/>
+            <JUDE:AssociationPresentation.qualifierBoxAPresentation>
+              <JUDE:QualifierBoxPresentation xmi.id="QualifierBoxAPresentation_model.Printer.model.Display" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="0.0" height="0.0" doAutoResize="true" visibility="true">
+              <JUDE:JomtPresentation.location>
+                <XMI.field>201.0</XMI.field>
+                <XMI.field>112.94031762295081</XMI.field>
+</JUDE:JomtPresentation.location>
+              <JUDE:JomtPresentation.compositeParent>
+                <JUDE:UPresentation xmi.idref="associationPresentation_model.Printer.model.Display"/>
+</JUDE:JomtPresentation.compositeParent>
+</JUDE:QualifierBoxPresentation>
+</JUDE:AssociationPresentation.qualifierBoxAPresentation>
+            <JUDE:AssociationPresentation.qualifierBoxBPresentation>
+              <JUDE:QualifierBoxPresentation xmi.id="QualifierBoxBPresentation_model.Printer.model.Display" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="0.0" height="0.0" doAutoResize="true" visibility="true">
+              <JUDE:JomtPresentation.location>
+                <XMI.field>339.0</XMI.field>
+                <XMI.field>123.15343237704917</XMI.field>
+</JUDE:JomtPresentation.location>
+              <JUDE:JomtPresentation.compositeParent>
+                <JUDE:UPresentation xmi.idref="associationPresentation_model.Printer.model.Display"/>
+</JUDE:JomtPresentation.compositeParent>
+</JUDE:QualifierBoxPresentation>
+</JUDE:AssociationPresentation.qualifierBoxBPresentation>
+</JUDE:AssociationPresentation>
+          <JUDE:AssociationPresentation xmi.id="associationPresentation_model.Printer.model.Printer" version="0" depth="2147483633" stereotypeVisibility="true" constraintVisibility="true" notationType="0" rightAngle="false" visibility="true" qualifierBoxATypeVisibility="true" qualifierBoxBTypeVisibility="true" nameDirectionVisible="true" nameDirectionReverse="0">
+            <JUDE:UPresentation.semanticModel>
+              <JUDE:Association xmi.idref="model.Printer.model.Printer"/>
+</JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="Class_Diagram"/>
+</JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ClassifierPresentation xmi.idref="classifierPresentation_model.Printer"/>
+              <JUDE:ClassifierPresentation xmi.idref="classifierPresentation_model.Printer"/>
+</JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line"/>
+</JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>0.0</XMI.field>
+              <XMI.field>0.0</XMI.field>
+</JUDE:JomtPresentation.location>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="LabelPresentation_model.Printer.model.Printer" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="11.0" height="15.09375" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>284.5</XMI.field>
+                  <XMI.field>134.5</XMI.field>
+</JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="associationPresentation_model.Printer.model.Printer"/>
+</JUDE:JomtPresentation.compositeParent>
+</JUDE:LabelPresentation>
+</JUDE:PathPresentation.namePresentation>
+            <JUDE:BinaryRelationPresentation.sourceEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+</JUDE:BinaryRelationPresentation.sourceEnd>
+            <JUDE:BinaryRelationPresentation.targetEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+</JUDE:BinaryRelationPresentation.targetEnd>
+            <JUDE:PathPresentation.points/>
+            <JUDE:AssociationPresentation.qualifierBoxAPresentation>
+              <JUDE:QualifierBoxPresentation xmi.id="QualifierBoxAPresentation_model.Printer.model.Printer" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="0.0" height="0.0" doAutoResize="true" visibility="true">
+              <JUDE:JomtPresentation.location>
+                <XMI.field>201.0</XMI.field>
+                <XMI.field>112.94031762295081</XMI.field>
+</JUDE:JomtPresentation.location>
+              <JUDE:JomtPresentation.compositeParent>
+                <JUDE:UPresentation xmi.idref="associationPresentation_model.Printer.model.Printer"/>
+</JUDE:JomtPresentation.compositeParent>
+</JUDE:QualifierBoxPresentation>
+</JUDE:AssociationPresentation.qualifierBoxAPresentation>
+            <JUDE:AssociationPresentation.qualifierBoxBPresentation>
+              <JUDE:QualifierBoxPresentation xmi.id="QualifierBoxBPresentation_model.Printer.model.Printer" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="0.0" height="0.0" doAutoResize="true" visibility="true">
+              <JUDE:JomtPresentation.location>
+                <XMI.field>339.0</XMI.field>
+                <XMI.field>123.15343237704917</XMI.field>
+</JUDE:JomtPresentation.location>
+              <JUDE:JomtPresentation.compositeParent>
+                <JUDE:UPresentation xmi.idref="associationPresentation_model.Printer.model.Printer"/>
+</JUDE:JomtPresentation.compositeParent>
+</JUDE:QualifierBoxPresentation>
+</JUDE:AssociationPresentation.qualifierBoxBPresentation>
+</JUDE:AssociationPresentation>
+</JUDE:Diagram.presentations>
+        <JUDE:Diagram.customStyleMap>
+          <JUDE:Diagram.styleProperty key="private.attribute.visibility" value="true"/>
+          <JUDE:Diagram.styleProperty key="package.operation.visibility" value="true"/>
+          <JUDE:Diagram.styleProperty key="attribute.stereotype.visibility" value="true"/>
+          <JUDE:Diagram.styleProperty key="protected.operation.visibility" value="true"/>
+          <JUDE:Diagram.styleProperty key="operation.parameter.directionkind.visibility" value="false"/>
+          <JUDE:Diagram.styleProperty key="attribute.type.visibility" value="true"/>
+          <JUDE:Diagram.styleProperty key="operation.compartment.visibility" value="true"/>
+          <JUDE:Diagram.styleProperty key="attribute.initial.value.visibility" value="true"/>
+          <JUDE:Diagram.styleProperty key="attribute.compartment.visibility" value="true"/>
+          <JUDE:Diagram.styleProperty key="operation.return.type.visibility" value="true"/>
+          <JUDE:Diagram.styleProperty key="operation.parameter.type.visibility" value="true"/>
+          <JUDE:Diagram.styleProperty key="private.operation.visibility" value="true"/>
+          <JUDE:Diagram.styleProperty key="public.operation.visibility" value="true"/>
+          <JUDE:Diagram.styleProperty key="operation.stereotype.visibility" value="true"/>
+          <JUDE:Diagram.styleProperty key="operation.constraint.visibility" value="true"/>
+          <JUDE:Diagram.styleProperty key="package.attribute.visibility" value="true"/>
+          <JUDE:Diagram.styleProperty key="visibility.kind.visibility" value="true"/>
+          <JUDE:Diagram.styleProperty key="protected.attribute.visibility" value="true"/>
+          <JUDE:Diagram.styleProperty key="operation.parameter.visibility" value="true"/>
+          <JUDE:Diagram.styleProperty key="public.attribute.visibility" value="true"/>
+          <JUDE:Diagram.styleProperty key="attribute.constraint.visibility" value="true"/>
+</JUDE:Diagram.customStyleMap>
+</JUDE:Diagram>
+</XMI.extension>

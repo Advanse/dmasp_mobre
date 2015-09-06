@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="Sample Action Set"
+            visible="true"
+            id="com.myplugin.actionSet">
+         	<menu
+               	label="Reverse &amp;Engineering"
+               	id="re_menu">
+            	<separator
+                  	name="re_group">
+            	</separator>
+         	</menu>
+         	<menu
+               	label="&amp;Refactoring"
+               	id="ref_menu">
+            	<separator name="ref_menu_group"/>
+	            <groupMarker
+                  	name="spec_refact_menu">
+            	</groupMarker>          	
+	            <groupMarker
+                  	name="desigpat_refact_menu">
+            	</groupMarker>          	
+         	</menu>    
+			<menu
+           	   path="ref_menu/spec_refact_menu"
+               icon="icons/persistence.gif"
+               label="&amp;Apply Persistence Refactoring"
+               id="specifMenu">
+               <separator name="sampleGroup1"/>
+	            <groupMarker
+                  	name="persistence_refact_menu">
+            	</groupMarker>     	               
+            </menu>
+
+			<menu
+           	   path="ref_menu/generic_refact_menu"
+               icon="icons/genrefactoring.gif"
+               label="&amp;Apply General Refactoring"
+               id="genericMenu">
+               <separator name="sampleGroup3"/>
+	            <groupMarker
+                  	name="generic_refact_menu">
+            	</groupMarker>     	               
+            </menu>
+
+			<menu
+           	   path="ref_menu/desigpat_refact_menu"
+               icon="icons/patterns.gif"
+               label="&amp;Apply Design Patterns Refactoring"
+               id="dpMenu">
+               <separator name="sampleGroup2"/>
+	            <groupMarker
+                  	name="desigpat_refact_menu">
+            	</groupMarker>     	               
+            </menu>
+
+         	<action
+               label="&amp;Observer"
+               icon="icons/observer.gif"
+               tooltip="Observer Design Pattern"
+               class="dmasp.actions.ObserverRefactoringAction"
+               menubarPath="ref_menu/dpMenu/sampleGroup2"
+               id="dmasp.actions.ObserverRefactoringAction">
+         	</action>
+         	<action
+               label="&amp;Singleton"
+               icon="icons/singleton.gif"
+               tooltip="Singleton Design Pattern"
+               class="dmasp.actions.SingletonRefactoringAction"
+               menubarPath="ref_menu/dpMenu/sampleGroup2"
+               id="dmasp.actions.SingletonRefactoringAction">
+         	</action>
+
+
+         	<action
+               label="&amp;Connection Management"
+               icon="icons/connection.gif"
+               tooltip="Connection Management"
+               class="dmasp.actions.ConnectionRefactoringAction"
+               menubarPath="ref_menu/specifMenu/sampleGroup1"
+               id="dmasp.actions.ConnectionRefactoringAction">
+         	</action>
+         	<action
+               label="&amp;Transaction Management"
+               icon="icons/transaction.gif"
+               tooltip="Transaction Management"
+               class="dmasp.actions.TransactionRefactoringAction"
+               menubarPath="ref_menu/specifMenu/sampleGroup1"
+               id="dmasp.actions.TransactionRefactoringAction">
+         	</action>
+         	<action
+               label="&amp;Synchronization Management"
+               icon="icons/syn.gif"
+               tooltip="Synchronization Management"
+               class="dmasp.actions.SynchronizationRefactoringAction"
+               menubarPath="ref_menu/specifMenu/sampleGroup1"
+               id="dmasp.actions.SynchronizationRefactoringAction">
+         	</action>
+
+         	<action
+               label="&amp;Generating Annotated OO Class Model"
+               icon="icons/annotatedmodel.gif"
+               class="dmasp.actions.SampleAction"
+               tooltip="Recovering OO Class Models Stereotyped with Crosscutting Concerns"
+               menubarPath="re_menu/re_group"
+               id="dmasp.actions.SampleAction">
+         	</action>
+         
+         	<action
+               label="&amp;Apply Refactoring 1"
+               icon="icons/genref.gif"
+               class="dmasp.actions.GeneralRefactoringAction"
+               tooltip="Apply Refactoring One"
+               menubarPath="ref_menu/genericMenu/sampleGroup3"
+               id="dmasp.actions.Ref1">
+         	</action>         
+
+         	<action
+               label="&amp;Apply Refactoring 2"
+               icon="icons/genref.gif"
+               class="dmasp.actions.GeneralRefactoringAction"
+               tooltip="Apply Refactoring Two"
+               menubarPath="ref_menu/genericMenu/sampleGroup3"
+               id="dmasp.actions.Ref2">
+         	</action>         
+
+         	<action
+               label="&amp;Apply Refactoring 3"
+               icon="icons/genref.gif"
+               class="dmasp.actions.GeneralRefactoringAction"
+               tooltip="Apply Refactoring Three"
+               menubarPath="ref_menu/genericMenu/sampleGroup3"
+               id="dmasp.actions.Ref3">
+         	</action>         
+
+         	<action
+               label="&amp;Analyse OO Class Model"
+               icon="icons/genref.gif"
+               class="dmasp.actions.GeneralRefactoringAction"
+               tooltip="Analyse OO Class Model"
+               menubarPath="ref_menu/genericMenu/sampleGroup3"
+               id="dmasp.actions.Analyse">
+         	</action>         
+
+         	<action
+               label="&amp;Apply Logging Refactoring"
+               icon="icons/logging.gif"
+               class="dmasp.actions.LoggingRefactoringAction"
+               tooltip="Apply Logging Refactoring"
+               menubarPath="ref_menu/ref_menu_group"
+               id="dmasp.actions.LoggingRefactoringAction">
+         	</action>         
+  	</actionSet>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               id="br.ufscar.dc.dmasp.menus.myrefactoring"
+               label="My Refactoring"
+               mnemonic="M">
+            <command
+                  commandId="br.ufscar.dc.dmasp.commands.sampleCommand"
+                  id="br.ufscar.dc.dmasp.menus.sampleCommand"
+                  mnemonic="S">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution locationURI="menu:br.ufscar.dc.dmasp.menus.myrefactoring">
+    <dynamic
+              class="dmasp.actions.MydynamicMenu"
+              id="com.sigasi.myDynamicMenu">
+    </dynamic>
+  </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="br.ufscar.dc.dmasp"
+            name="Sample Category">
+      </category>
+      <view
+            category="br.ufscar.dc.dmasp"
+            class="br.ufscar.dc.dmasp.views.RefactoringView"
+            icon="icons/refactoringview.gif"
+            id="br.ufscar.dc.dmasp.views.RefactoringView"
+            name="Refactoring View">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.jdt.ui.JavaPerspective">
+         <view
+               id="br.ufscar.dc.dmasp.views.SampleView"
+               ratio="0.5"
+               relationship="right"
+               relative="org.eclipse.ui.views.TaskList">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.help.contexts">
+      <contexts
+            file="contexts.xml">
+      </contexts>
+   </extension>
+</plugin>

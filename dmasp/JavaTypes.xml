@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsl:stylesheet version="2.0"
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+	xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML"
+	
+>
+	<xsl:output encoding="UTF-8" method="xml" indent="yes"/>
+	
+	<xsl:template match="/">
+		<xsl:for-each select="project">
+			<xmi:XMI xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Standard="http://www.eclipse.org/uml2/schemas/Standard/1" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Standard/1 pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w">
+				
+				<xsl:attribute name="xmi:version">
+					<xsl:text>2.1</xsl:text>
+				</xsl:attribute>
+				
+				<xsl:element name="uml:Model">
+				
+					<xsl:attribute name="xmi:id">
+						<xsl:text>_0</xsl:text>
+					</xsl:attribute>
+					<xsl:attribute name="name">
+						<xsl:text>JavaPrimitiveTypes</xsl:text>
+					</xsl:attribute>
+					
+					<xsl:for-each select="./types/type">
+						
+						<xsl:element name="packagedElement">
+							
+							<xsl:attribute name="xmi:type">
+								<xsl:text>uml:PrimitiveType</xsl:text>
+							</xsl:attribute>
+							<xsl:attribute name="xmi:id">
+								<xsl:value-of select="./id"/>
+							</xsl:attribute>
+							<xsl:attribute name="name">
+								<xsl:value-of select="./name"/>
+							</xsl:attribute>
+							
+						</xsl:element>
+						
+					</xsl:for-each>
+					
+					<xsl:element name="profileApplication">
+						
+						<xsl:attribute name="xmi:id">
+							<xsl:text>_profileApplication.0</xsl:text>
+						</xsl:attribute>
+						
+						<xsl:element name="eAnnotations">
+						
+							<xsl:attribute name="xmi:id">
+								<xsl:text>_profileApplication.0-_eAnnotations.0</xsl:text>
+							</xsl:attribute>
+							<xsl:attribute name="source">
+								<xsl:text>http://www.eclipse.org/uml2/2.0.0/UML</xsl:text>
+							</xsl:attribute>
+			
+							<xsl:element name="references">
+							
+								<xsl:attribute name="xmi:type">
+									<xsl:text>ecore:EPackage</xsl:text>
+								</xsl:attribute>
+								<xsl:attribute name="href">
+									<xsl:text>pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w</xsl:text>
+								</xsl:attribute>
+							
+							</xsl:element>
+							
+						</xsl:element>
+						
+						<xsl:element name="appliedProfile">
+							
+							<xsl:attribute name="href">
+								<xsl:text>pathmap://UML_PROFILES/Standard.profile.uml#_0</xsl:text>
+							</xsl:attribute>
+							
+						</xsl:element>
+						
+					</xsl:element>
+					
+				</xsl:element>
+				
+				<xsl:element name="Standard:ModelLibrary">
+					
+					<xsl:attribute name="xmi:id">
+						<xsl:text>_Lu3jUHMkEdq-w6X-VZUD9Q</xsl:text>
+					</xsl:attribute>
+					<xsl:attribute name="base_Package">
+						<xsl:text>_0</xsl:text>
+					</xsl:attribute>
+					
+				</xsl:element>
+			</xmi:XMI>
+		</xsl:for-each>
+	</xsl:template>
+	
+</xsl:stylesheet>

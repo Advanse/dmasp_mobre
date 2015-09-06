@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsl:stylesheet version="2.0"
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+	xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML"
+	xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation"
+	xmlns:uml2tools.notation="http://www.eclipse.org/mdt/uml2tools/gmf/notation/ext/2008"
+>
+
+	<xsl:output encoding="UTF-8" method="xml" indent="yes"/>
+	
+	<xsl:template match="/">
+		<xsl:for-each select="project">
+		
+			<notation:Diagram>
+			
+				<xsl:attribute name="xmi:id">
+					<xsl:value-of select="./id"/>
+					<xsl:text>_id_Diagram</xsl:text>
+				</xsl:attribute>
+				<xsl:attribute name="type">
+					<xsl:text>uml_class</xsl:text>
+				</xsl:attribute>
+				<xsl:attribute name="name">
+					<xsl:value-of select="./name"/>
+					<xsl:text>.uml_class_diagram</xsl:text>
+				</xsl:attribute>
+				<xsl:attribute name="measurementUnit">
+					<xsl:text>Pixel</xsl:text>	
+				</xsl:attribute>
+				
+				<xsl:element name="element">
+				
+					<xsl:attribute name="xmi:type">
+						<xsl:text>uml:Model</xsl:text>
+					</xsl:attribute>
+					<xsl:attribute name="href">
+						<xsl:value-of select="./name"/>
+						<xsl:text>.uml#</xsl:text>
+						<xsl:value-of select="./id"/>
+						<xsl:text>_id_Model</xsl:text>
+					</xsl:attribute>
+				
+				</xsl:element>
+				
+			</notation:Diagram>
+		
+		</xsl:for-each>
+	</xsl:template>
+	
+</xsl:stylesheet>
